@@ -1,0 +1,13 @@
+event_id,date,time_et,who,role,channel,content_type,target,expected_dir,verified,notes
+liberation_day,2025-04-02,16:00,Donald Trump,head_of_state,scheduled_speech,policy_tariffs,SPY,down,FALSE,Rose Garden tariff announcement after the close; S&P fell sharply on Apr 3 and Apr 4
+tariff_pause,2025-04-09,13:18,Donald Trump,head_of_state,social_post,policy_tariffs,SPY,up,FALSE,90-day pause posted on Truth Social; earlier 'great time to buy' post that morning; S&P had one of its biggest days ever
+china_tariff_threat,2025-10-10,,Donald Trump,head_of_state,social_post,policy_tariffs,SPY,down,FALSE,threat of large new tariffs on China; S&P and crypto sold off
+intel_ceo_resign,2025-08-07,,Donald Trump,head_of_state,social_post,company_attack,INTC,down,FALSE,called on Intel CEO Lip-Bu Tan to resign
+huang_quantum,2025-01-08,,Jensen Huang,ceo,unscheduled_remark,tech_claim,IONQ;RGTI;QBTS,down,FALSE,CES analyst Q&A: useful quantum computers 15-30 years away; quantum stocks dropped hard; check reversal (Q4b)
+deepseek,2025-01-27,,(none),tech_news,news_report,tech_claim,NVDA,down,FALSE,not a person: control case for 'tech shock without a person'
+musk_funding_secured,2018-08-07,12:48,Elon Musk,ceo,social_post,company_claim,TSLA,up,FALSE,"'funding secured' tweet, trading halted later that day"
+kylie_snapchat,2018-02-22,,Kylie Jenner,celebrity,social_post,company_attack,SNAP,down,FALSE,tweet about not using Snapchat anymore
+ronaldo_coke,2021-06-14,,Cristiano Ronaldo,celebrity,unscheduled_remark,company_attack,KO,down,FALSE,Euro 2020 press conference; drop overlapped with the ex-dividend date -> likely myth (dead-end candidate)
+ihsg_halt,2025-03-18,,(fiscal concerns / Sri Mulyani resignation rumours),policy,news_report,policy_fiscal,^JKSE,down,FALSE,IHSG fell ~6-7% intraday and triggered a trading halt
+sri_mulyani_out,2025-09-08,,Prabowo Subianto,head_of_state,news_report,appointment,^JKSE;IDR=X,down,FALSE,finance minister Sri Mulyani replaced; price check: day+1 drop bigger than day 0 -> announcement probably after the IDX close (find the exact time). IDR=X up = weaker rupiah
+powell_jackson_hole_2025,2025-08-22,10:00,Jerome Powell,central_banker,scheduled_speech,policy_rates,SPY,up,FALSE,dovish signal; scheduled control case

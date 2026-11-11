@@ -1,0 +1,20 @@
+person,group,country,why_track,main_assets,event_source,priority
+Donald Trump,head_of_state,US,tariffs and company attacks by post,SPY;QQQ;sector ETFs;named tickers;USD;BTC-USD,Truth Social archive + UCSB speeches,1
+Prabowo Subianto,head_of_state,ID,fiscal policy / appointments / Danantara,^JKSE;IDR=X;state-owned banks (BBRI BMRI BBNI),presidenri.go.id + GDELT,1
+Fed chair (Powell to May 2026; then successor),central_banker,US,rates; scheduled = clean control group,SPY;TLT;DXY,federalreserve.gov calendar,1
+Scott Bessent,minister,US,Treasury: trade deals / tariff talks,SPY;USD;CNH,GDELT + Treasury press,2
+Howard Lutnick,minister,US,Commerce: tariff details,SPY;sector ETFs,GDELT,2
+Indonesian finance minister (Purbaya Yudhi Sadewa since Sep 2025; verify),minister,ID,fiscal credibility (the Sri Mulyani effect),^JKSE;IDR=X;ID bonds,GDELT + Kemenkeu,1
+Perry Warjiyo,central_banker,ID,Bank Indonesia rates / rupiah,IDR=X;^JKSE,bi.go.id calendar,2
+Rosan Roeslani,state_fund,ID,Danantara (sovereign fund) moves,state-owned stocks;^JKSE,GDELT,3
+Elon Musk,ceo,US,posts about Tesla / politics / crypto,TSLA;DOGE-USD,X (paid) -> GDELT/news as proxy,1
+Jensen Huang,ceo,US,AI/tech claims move whole sectors,NVDA;SMH;named small caps,GDELT + keynote calendar,1
+Sam Altman,ceo,US,OpenAI deals move partners (ORCL AMD NVDA MSFT),ORCL;AMD;NVDA;MSFT,GDELT,2
+Mark Zuckerberg,ceo,US,capex / AI spending remarks,META,GDELT + earnings calls,3
+Jamie Dimon,ceo,US,macro warnings,JPM;XLF,GDELT,3
+Warren Buffett / Berkshire,investor,US,13F buys and letters,named tickers;BRK-B,SEC 13F + GDELT,3
+Michael Saylor,ceo,US,bitcoin buys,MSTR;BTC-USD,X/GDELT,3
+Keith Gill (Roaring Kitty),influencer,US,meme-stock hype,GME;AMC,Reddit + news,2
+Jim Cramer,influencer,US,'inverse Cramer' myth test,named tickers,CNBC transcripts/news,3
+Taylor Swift,celebrity,US,celebrity control group (expect ~no effect),brand tickers mentioned,GDELT,3
+Cristiano Ronaldo,celebrity,global,celebrity control group (Coke myth),brand tickers mentioned,GDELT,3

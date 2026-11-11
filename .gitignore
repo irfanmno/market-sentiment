@@ -1,0 +1,23 @@
+# secrets
+.env
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# data (large / personal) - keep folder structure only
+data/raw/**
+data/processed/**
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.dem
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# forward collector output lives on the collector-data branch, not main
+data/collector/
