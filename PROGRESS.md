@@ -4,13 +4,13 @@ _Last updated 2026-11-11 (session 1 continued). Update at the end of every sessi
 
 ## 0. Where things stand (start here)
 
-- **Session 1 done: design only.** Folder scaffolded, research plan written, 12 seed events listed (unverified), 19 people to track (`data/events/people.csv`), analysis toolkit (RESEARCH_PLAN §8) and the usable pipeline (§9) designed. `git init` on `main`, nothing committed.
+- **Session 1 done: design only.** Folder scaffolded, research plan written, 12 seed events listed (unverified), 19 people to track (`data/events/people.csv`), analysis toolkit (RESEARCH_PLAN §8) and the usable pipeline (§9) designed. First commit on `main` 2026-11-11 (f484ba1), pushed to GitHub (public).
 - **Truth Social archive in + first all-posts study + Q4a desensitisation test done** (§5). Text-only surprise score built and tested: **mostly a dead end** (§5). Pivoted to detect-then-follow; the after-shock study is done (§5): **no reliable bounce-back; Trump shocks tended to keep going, but only 13 SPY events**. Next: more events (other people, minute data), and/or start the forward collector so the sample grows. Still unknown: what changed around Feb 2026.
-- **Forward collector built and tested locally, NOT live yet** (§4): needs a GitHub repo + push (user's call: public = every 10 min free, private = every 30 min).
+- **Forward collector LIVE since 2026-11-11** on the public repo https://github.com/irfanmno/market-sentiment (every 10 min + daily minute bars → `collector-data` branch). First manual run: all 40 sources OK from GitHub's IPs (Reddit too), 1,488 items, 7 days of minute bars. To use the data locally: `git fetch origin collector-data` then `git worktree add data/collector collector-data` (or `git -C data/collector pull` once it exists).
 - **Wider watchlist done (daily, 10 years, Wikipedia attention spikes, §5).** GDELT blocked this machine's IP, so attention = mobile Wikipedia page views instead. Prabowo→IHSG, Roaring Kitty→GME, Fed chair→SPY/TLT and Huang→NVDA pass; Musk, Altman, Lutnick, Purbaya and the Taylor Swift control don't; Bessent was only the tariff week.
 - **Building started:** `.venv` created (Python 3.13), daily prices fetched for benchmarks + seed tickers, and the seed events checked against prices (§5). Event *times* are still unverified.
 - Named `market-sentiment` (not stock-sentiment) because it covers indices and FX too, not just stocks.
-- **Ask before committing or pushing.**
+- **Ask before committing or pushing** (the repo is public: keep personal details out of every file).
 
 ## 1. How to work on this project
 
@@ -27,7 +27,7 @@ _Last updated 2026-11-11 (session 1 continued). Update at the end of every sessi
 |---|---|---|---|
 | Q1 | Which people and events move markets? | Event study (abnormal returns) on complete event sources + placebo times | first answers: Trump tariffs (hourly), Fed chair, Prabowo, Roaring Kitty (daily) |
 | Q2 | First report → price move → consensus: how long? | Three clocks: origin t0, price (1-min), diffusion (GDELT/RSS counts) | daily: price moves same day or before; public attention lags ~0–1 day |
-| Q3 | Fastest outlets and apps | Forward-only collector logging first_seen per source | collector built, not live yet (needs weeks of running) |
+| Q3 | Fastest outlets and apps | Forward-only collector logging first_seen per source | collector live since 2026-11-11; analyse after ~4 weeks |
 | Q4 | Desensitisation, overreaction and reversal, tone vs attention, Indonesia vs US, does Reddit lead or lag | | not started |
 
 ## 3. Key decisions and constraints
@@ -155,7 +155,7 @@ Research scripts still to write: `RESEARCH_PLAN.md` §6. **The usable pipeline t
 
 1. Answer §6 with the user. Make the venv (`python -m venv .venv`, `pip install -r requirements.txt`).
 2. ~~fetch_prices + seed check~~ done. Still: verify event **times** (to the minute) from sources and set `verified`; ask the user for their takes on the seed results.
-3. **Forward collector: built + tested locally (2026-11-11).** To go live: user picks public/private → first commit on main → `gh repo create` → push → run the workflow once by hand → check the `collector-data` branch. Then leave it for weeks; Q3 analysis after ~4 weeks.
+3. ~~Forward collector~~ **live 2026-11-11**. Check once a week that runs are happening (Actions tab, or `runs/YYYY-MM.csv` on `collector-data`). Q3 analysis after ~4 weeks (≈ mid-Dec 2026). Local test data from before going live was in `data/collector/` (ignored); replace it with a worktree of the branch.
 4. ~~Truth Social archive + first all-posts study~~ done (hourly). ~~(a) Q4a desensitisation~~ done: regime, not fatigue. ~~(b) novelty/surprise measure~~ done, dead end → pivot to detect-then-follow. ~~(b2) after-shock study~~ done: no bounce, weak keep-going hint, n too small. Next: ~~(b3) other people~~ done daily via Wikipedia (GDELT blocked); still: GDELT hourly when unblocked (Q2 in hours), ~~split Fed scheduled vs unscheduled~~ done, check Huang/NVDA with earnings dates removed, minute bars (Alpaca), and the forward collector (it only gets better with time) (numbers, 'effective', new country, 'pause') vs repeat rants; (c) minute data around the big hours (Alpaca key needed) to time the move (Q2); (d) turn into notebook 01.
 5. Q2 timing clocks on the minute-level subset.
 6. Lock the plan (like EXPERIMENT.md) before looking at Q4b reversal results.
